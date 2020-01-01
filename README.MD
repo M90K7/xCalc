@@ -13,11 +13,11 @@ Fun android expression calculator 😁 😅
 
 #### 🎨 Screenshot:
 
-![XCalc Screenshot](https://github.com/M90K7/xCalc/Screenshot/Screenshot_2019-12-29-22-11-53.png "Logo Title Text 1")
+![XCalc Screenshot](Screenshot/Screenshot_2019-12-29-22-11-53.png "Logo Title Text 1")
 
-![XCalc Screenshot](https://github.com/M90K7/xCalc/Screenshot/Screenshot_2019-12-29-22-12-08.png "Logo Title Text 1")
+![XCalc Screenshot](Screenshot/Screenshot_2019-12-29-22-12-08.png "Logo Title Text 1")
 
-![XCalc Screenshot](https://github.com/M90K7/xCalc/Screenshot/Screenshot_2019-12-29-22-12-23.png "Logo Title Text 1")
+![XCalc Screenshot](Screenshot/Screenshot_2019-12-29-22-12-23.png "Logo Title Text 1")
 
 ##### 🛕 Build Project
 

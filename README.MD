@@ -22,3 +22,5 @@ Fun android expression calculator 😁 😅
 ##### 🛕 Build Project
 
     Build project with Android Studio
+
+##### 🩳 License MIT

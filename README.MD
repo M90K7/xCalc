@@ -1,4 +1,4 @@
-## eXpression Calculator (XCalc) ⚖ 🐉
+## eXpression Calculator (xCalc) ⚖ 🐉
 
 Fun android expression calculator 😁 😅
 

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".XCalcFragmentActivity">
+
+    <group>
+        <item
+            android:id="@+id/set_context_menuItem"
+            android:title="Set"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/delete_context_menuItem"
+            android:title="Delete" />
+    </group>
+    <item
+        android:id="@+id/clear_list_context_menu"
+        android:title="Clear List" />
+</menu>

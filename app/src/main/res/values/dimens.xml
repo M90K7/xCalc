@@ -1,0 +1,14 @@
+<resources>
+
+    <integer name="layout_weightSum">1</integer>
+    <integer name="scrollView_layout_weight">0</integer>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="button_textSize">15dp</dimen>
+    <dimen name="question_size">18dp</dimen>
+    <dimen name="answer_size">23dp</dimen>
+
+</resources>

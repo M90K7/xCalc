@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">xCalc</string>
+
+    <string name="s_about">About</string>
+    <string name="s_xCalc">xCalc</string>
+    <string name="s_help">Help</string>
+    <string name="text_hint">xCalculator</string>
+    <string name="n0">0</string>
+    <string name="n0_tag">num:0</string>
+    <string name="dot">.</string>
+    <string name="dot_tag">num:.</string>
+    <string name="plus">+</string>
+    <string name="plus_tag">num:+</string>
+    <string name="equal">=</string>
+    <string name="n1">1</string>
+    <string name="n1_tag">num:1</string>
+    <string name="n2">2</string>
+    <string name="n2_tag">num:2</string>
+    <string name="n3">3</string>
+    <string name="n3_tag">num:3</string>
+    <string name="minus">-</string>
+    <string name="minus_tag">num:-</string>
+    <string name="percent">%</string>
+    <string name="percent_tag">num:%</string>
+    <string name="pi">π</string>
+    <string name="pi_tag">const:π</string>
+    <string name="n4">4</string>
+    <string name="n4_tag">num:4</string>
+    <string name="n5">5</string>
+    <string name="n5_tag">num:5</string>
+    <string name="n6">6</string>
+    <string name="n6_tag">num:6</string>
+    <string name="star">*</string>
+    <string name="star_tag">num:*</string>
+    <string name="n7">7</string>
+    <string name="n7_tag">num:7</string>
+    <string name="n8">8</string>
+    <string name="n8_tag">num:8</string>
+    <string name="n9">9</string>
+    <string name="n9_tag">num:9</string>
+    <!--÷-->
+    <string name="divide">/</string>
+    <string name="divide_tag">num:/</string>
+    <string name="square">√</string>
+
+    <string name="log10">log¹º</string>
+    <string name="log10_tag">func:log</string>
+    <string name="openP">(</string>
+    <string name="openP_tag">num:(</string>
+    <string name="closeP">)</string>
+    <string name="next_tag">move:next</string>
+    <string name="previous_tag">move:previous</string>
+    <string name="back_tag">clear:back</string>
+    <string name="clear">C</string>
+    <string name="clear_tag">clear:all</string>
+    <string name="error">Error: </string>
+    <string name="clearList">CL</string>
+    <string name="e_tag">const:e</string>
+    <string name="e">e</string>
+    <string name="power_tag">num:^</string>
+    <string name="power">^</string>
+
+    <string name="cbrt">³√</string>
+    <string name="cbrt_tag">func:cbrt</string>
+    <string name="ln">ln</string>
+    <string name="ln_tag">func:ln</string>
+    <string name="abs">|x|</string>
+    <string name="abs_tag">func:abs</string>
+
+    <string name="asin">sin&lt;sup&gt;-1&lt;/sup&gt;</string>
+    <string name="acos">cos&lt;sup&gt;-1&lt;/sup&gt;</string>
+    <string name="atan">tan&lt;sup&gt;-1&lt;/sup&gt;</string>
+    <string name="asinh">sinh&lt;sup&gt;-1&lt;/sup&gt;</string>
+    <string name="acosh">cosh&lt;sup&gt;-1&lt;/sup&gt;</string>
+    <string name="atanh">tanh&lt;sup&gt;-1&lt;/sup&gt;</string>
+
+    <string name="sin">sin</string>
+    <string name="sin_tag">func:sin:asin</string>
+    <string name="cos">cos</string>
+    <string name="cos_tag">func:cos:acos</string>
+    <string name="tan">tan</string>
+    <string name="tan_tag">func:tan:atan</string>
+    <string name="sinh_tag">func:sinh:asinh</string>
+    <string name="sinh">sinh</string>
+    <string name="cosh_tag">func:cosh:acosh</string>
+    <string name="cosh">cosh</string>
+    <string name="tanh_tag">func:tanh:atanh</string>
+    <string name="tanh">tanh</string>
+
+    <string-array name="title_desc">
+        <item>%</item>
+        <item>√</item>
+        <item>³√</item>
+        <item>|x|</item>
+
+        <item>acos</item>
+        <item>acosh</item>
+        <item>asin</item>
+        <item>asinh</item>
+        <item>atan</item>
+        <item>cos</item>
+        <item>cosh</item>
+        <item>ln</item>
+        <item>log</item>
+        <item>sin</item>
+        <item>sinh</item>
+        <item>tan</item>
+        <item>tanh</item>
+    </string-array>
+
+    <string-array name="info_desc">
+        <item>Compute Modulus.</item>
+        <item>Compute the square root of a number.</item>
+        <item>Compute the cubic root of a number.</item>
+        <item>Absolute value.</item>
+
+        <item>Compute the arc cosine of a number.</item>
+        <item>Compute the inverse hyperbolic cosine of a number.</item>
+        <item>Compute the arc sine of a number.</item>
+        <item>Compute the inverse hyperbolic sine of a number.</item>
+        <item>Arc-tangent function.</item>
+        <item>Cosine function.</item>
+        <item>Compute the hyperbolic cosine of a number.</item>
+        <item>Natural logarithm.</item>
+        <item>Compute the base 10 logarithm.</item>
+        <item>Sine function.</item>
+        <item>Compute the hyperbolic sine of a number.</item>
+        <item>Tangent function.</item>
+        <item>Compute the hyperbolic tangent of a number.</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="deg_tag">func:DEG</string>
+    <string name="deg">DEG</string>
+    <string name="grd_tag">func:RAD</string>
+    <string name="grd">RAD</string>
+
+    <!--sin&lt;sup&gt;-1&lt;/sup&gt;-->
+
+</resources>

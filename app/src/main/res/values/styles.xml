@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="button_base" parent="android:Widget.Button.Small">
+        <!--<item name="android:textAppearance">@android:style/TextAppearance.Medium</item>-->
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">0px</item>
+        <item name="android:layout_margin">0px</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="button_base_extend" parent="button_base">
+        <item name="android:onClick">onClick_Command</item>
+    </style>
+
+    <style name="textView_base" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <!--<style name="button_base.large" parent="button_base_extend">-->
+        <!--<item name="android:textAppearance">?android:textAppearanceLarge</item>-->
+    <!--</style>-->
+
+    <style name="imageButton_action" parent="android:Widget.ImageButton">
+        <!--<item name="android:minWidth">70dp</item>-->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:onClick">onClick_Command</item>
+    </style>
+
+    <style name="quick_imageButton_style" parent="imageButton_action">
+        <!--<item name="android:minWidth">25dp</item>-->
+    </style>
+
+</resources>

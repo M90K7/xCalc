@@ -1,0 +1,374 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="@integer/layout_weightSum"
+    tools:context=".XCalcFragmentActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/previous_button"
+            style="@style/quick_imageButton_style"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/left_arrow"
+            android:tag="@string/previous_tag" />
+
+        <ImageButton
+            android:id="@+id/next_button"
+            style="@style/quick_imageButton_style"
+            android:layout_alignTop="@id/previous_button"
+            android:layout_toRightOf="@id/previous_button"
+            android:src="@mipmap/right_arrow"
+            android:tag="@string/next_tag" />
+
+       <!-- <ImageButton
+            android:id="@+id/undo_button"
+            style="@style/quick_imageButton_style"
+            android:src="@mipmap/undo"
+            android:tag="@string/previous_tag" />
+
+        <ImageButton
+            android:id="@+id/redo_button"
+            style="@style/quick_imageButton_style"
+            android:layout_alignTop="@id/undo_button"
+            android:layout_toRightOf="@id/undo_button"
+            android:src="@mipmap/redo"
+            android:tag="@string/next_tag" />-->
+
+        <Button
+            android:id="@+id/shift_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/previous_button"
+            android:text="SHIFT" />
+
+
+        <com.mk7.xcalc.views.KeyboardlessEditText
+            android:id="@+id/expression_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/next_button"
+            android:clickable="false"
+            android:inputType="text"
+            android:textAppearance="?android:textAppearanceLarge">
+
+            <requestFocus />
+        </com.mk7.xcalc.views.KeyboardlessEditText>
+
+        <ListView
+            android:id="@+id/expression_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/expression_editText"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/next_button"
+            android:choiceMode="singleChoice"
+            android:focusable="true"
+            android:gravity="end"
+            android:scrollbarSize="100dp"
+            android:smoothScrollbar="true"
+            android:stackFromBottom="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_weight="@integer/scrollView_layout_weight"
+        android:padding="0dp">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0px"
+            android:isScrollContainer="true"
+
+            android:padding="0px"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <!-- android:text="←" -->
+
+                <ImageButton
+                    style="@style/imageButton_action"
+                    android:layout_height="35dp"
+                    android:layout_span="2"
+                    android:src="@mipmap/left"
+                    android:tag="@string/back_tag"
+                    android:tint="#ff000000" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/clear_tag"
+                    android:text="@string/clear" />
+
+                <Button
+                    android:id="@+id/clearList_button"
+                    style="@style/button_base"
+                    android:text="@string/clearList" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/openP_tag"
+                    android:text="@string/openP" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="num:)"
+                    android:text="@string/closeP" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/abs_tag"
+                    android:text="@string/abs" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/ln_tag"
+                    android:text="@string/ln" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/log10_tag"
+                    android:text="@string/log10" />
+
+                <TextView />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/deg_tag"
+                    android:text="@string/deg" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/grd_tag"
+                    android:text="@string/grd" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/shift_tableRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/asin_textView"
+                    style="@style/textView_base"
+                    android:text="@string/asin" />
+
+                <TextView
+                    android:id="@+id/acos_textView"
+                    style="@style/textView_base"
+                    android:text="@string/acos" />
+
+
+                <TextView
+                    android:id="@+id/atan_textView"
+                    style="@style/textView_base"
+                    android:text="@string/atan" />
+
+                <TextView
+                    android:id="@+id/asinh_textView"
+                    style="@style/textView_base"
+                    android:text="@string/asinh" />
+
+                <TextView
+                    android:id="@+id/acosh_textView"
+                    style="@style/textView_base"
+                    android:text="@string/acosh" />
+
+                <TextView
+                    android:id="@+id/atanh_textView"
+                    style="@style/textView_base"
+                    android:text="@string/atanh" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/sin_tag"
+                    android:text="@string/sin" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/cos_tag"
+                    android:text="@string/cos" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/tan_tag"
+                    android:text="@string/tan" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/sinh_tag"
+                    android:text="@string/sinh" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/cosh_tag"
+                    android:text="@string/cosh" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/tanh_tag"
+                    android:text="@string/tanh" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/n7_tag"
+                    android:text="@string/n7" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/n8_tag"
+                    android:text="@string/n8" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/n9_tag"
+                    android:text="@string/n9" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/divide_tag"
+                    android:text="@string/divide"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="func:sqrt"
+                    android:text="@string/square" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/cbrt_tag"
+                    android:text="@string/cbrt" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/n4_tag"
+                    android:text="@string/n4" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/n5_tag"
+                    android:text="@string/n5" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/n6_tag"
+                    android:text="@string/n6" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/star_tag"
+                    android:text="@string/star" />
+
+                <Button
+                    style="@style/button_base"
+                    android:tag="@string/power_tag"
+                    android:text="@string/power" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/percent_tag"
+                    android:text="@string/percent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/n1_tag"
+                    android:text="@string/n1" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/n2_tag"
+                    android:text="@string/n2" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/n3_tag"
+                    android:text="@string/n3" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/minus_tag"
+                    android:text="@string/minus" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/pi_tag"
+                    android:text="@string/pi" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/e_tag"
+                    android:text="@string/e" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:layout_span="2"
+                    android:tag="@string/n0_tag"
+                    android:text="@string/n0" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/dot_tag"
+                    android:text="@string/dot" />
+
+                <Button
+                    style="@style/button_base_extend"
+                    android:tag="@string/plus_tag"
+                    android:text="@string/plus" />
+
+                <Button
+                    android:id="@+id/equal_button"
+                    style="@style/button_base"
+                    android:layout_span="2"
+                    android:text="@string/equal" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
